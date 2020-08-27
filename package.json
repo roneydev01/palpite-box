@@ -1,0 +1,27 @@
+{
+  "name": "palpite-box",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roneydev01/palpite-box.git"
+  },
+  "keywords": [],
+  "author": "Roney Freitas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roneydev01/palpite-box/issues"
+  },
+  "homepage": "https://github.com/roneydev01/palpite-box#readme",
+  "dependencies": {
+    "next": "^9.5.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
