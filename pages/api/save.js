@@ -47,7 +47,11 @@ export default async (req, res) => {
       Promo
     })
     //Enviado dados para a planilha
-    res.end(req.body)
+    res.end(JSON.stringify({
+      showCupom: Cupom !== '',
+      Cupom,
+      Promo
+    }))
   } catch (error) {
     res.end('error')
   }
