@@ -6,14 +6,14 @@ const Pesquisa = () => {
   const [form, setFom] = useState({
     Nome: '',
     Email: '',
-    Whatsapp: ''
+    Whatsapp: '',
+    Nota: 0
 
   })
 
+  const notas = [0, 1, 2, 3, 4, 5]
   const [sucess, setSucccess] = useState(false)
-  const [retorno, setRetorno] = useState({
-
-  })
+  const [retorno, setRetorno] = useState({})
 
   const save = async () => {
     try {
@@ -53,6 +53,17 @@ const Pesquisa = () => {
           <input type='text' className='p-4 block shadow bg-green-200 my-2 rounded ' placeholder='E-mail' onChange={onChange} name='Email' value={form.Email} />
           <label className='font-bold'>Whatsapp</label>
           <input type='text' className='p-4 block shadow bg-green-200 my-2 rounded ' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+          <label className='font-bold'>Nota</label>
+          <div className='flex py-4'>
+            {
+              notas.map(nota => {
+                return (<label className='block w-1/6'>
+                  {nota} <br />
+                  <input type='radio' name='Nota' value={nota} onChange={onChange} />
+                </label>)
+              })
+            }
+          </div>
           <button className='bg-green-500 px-12 py-3 my-2 font-bold rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
         </div>
       }
