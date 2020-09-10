@@ -1,9 +1,8 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet'
 import moment from 'moment'
-import credentials from '../../credentials.json'
 
 //Id da Planllha
-const doc = new GoogleSpreadsheet('1o-eMKiKfNDCbdNtOJtKf2dDQr3OFLNB8jGrWNP1YMDM')
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
 //Gera Cupom
 const genCupom = () => {
@@ -15,7 +14,10 @@ const genCupom = () => {
 
 export default async (req, res) => {
   try {
-    await doc.useServiceAccountAuth(credentials)
+    await doc.useServiceAccountAuth({
+      client_email: process.env.SHEET_CLIENT_EMAIL,
+      private_key: process.env.SHEET_PRIVATE_KEY
+    })
     await doc.loadInfo()
     const sheet = doc.sheetsByIndex[1]
     //Pegando os dados da requisição
