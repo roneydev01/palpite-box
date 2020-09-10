@@ -2,7 +2,7 @@
 
 [![HitCount](http://hits.dwyl.com/roneydev01/roneydev01/palpite-box.svg)](http://hits.dwyl.com/roneydev01/roneydev01/palpite-box)
 
-Este projeto foi construído durante a Semana Fullstack Master do [DevPleno](https://devpleno.com). Uma versão online deste projeto pode ser encontrada em: https://palpite-box-puce.vercel.app
+Este projeto foi construído durante a Semana Fullstack Master do [DevPleno](https://devpleno.com). Uma versão online deste projeto pode ser encontrada em: https://palpite-box.roneydev01.vercel.app
 
 ## Início
 
