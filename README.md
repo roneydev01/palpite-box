@@ -42,12 +42,3 @@ rapidly building custom designs.
 ## Author:
 
 * **Roney Freitas** - [LinkedIn](https://www.linkedin.com/in/roney-freitas-99b264114/)
-
-
-## Licença
-
-## Este projeto é licenciado sobre a licença MIT - veja LICENSE.md LICENSE.md para mais informações.
-
-## Acknowledgments
-
-* Este projeto foi construído durante a Semana Fullstack Master do [DevPleno](https://devpleno.com).
