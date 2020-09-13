@@ -12,6 +12,10 @@ const Footer = () => {
           <img className='inline p-4' src='/logo_semana_fsm.png' />
           <img className='inline p-4' src='/logo_devpleno.png' />
         </div>
+        <div className='mt-2'>
+          <p> Versão do <strong>PalpiteBox</strong>, utilizando <strong>NextJs, TailwindCSS </strong> e integração com o <strong>Google Spreadsheet</strong>.</p>
+          <p>Este projeto foi construído no Fullstack Master Premium.</p>
+        </div>
 
       </div>
     </div>
