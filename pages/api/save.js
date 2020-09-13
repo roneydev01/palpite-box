@@ -20,6 +20,7 @@ export default async (req, res) => {
       private_key: fromBase64(process.env.SHEET_PRIVATE_KEY)
     })
     await doc.loadInfo()
+    //Carrega as informações da planillha
     const sheet = doc.sheetsByIndex[1]
     //Pegando os dados da requisição
     const data = JSON.parse(req.body)
@@ -45,6 +46,7 @@ export default async (req, res) => {
       Email: data.Email,
       Whatsapp: data.Whatsapp,
       Nota: parseInt(data.Nota),
+      Produto: data.Produto,
       'Data': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
       Promo

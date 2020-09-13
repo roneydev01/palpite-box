@@ -1,7 +1,12 @@
 import React, { useState } from "react"
 import PageTitle from '../components/PageTitle'
+import useSWR from 'swr'
+
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const Pesquisa = () => {
+
+  const { data, error } = useSWR('/api/get-dados', fetcher)
   //Controlando o Formulário por Estado
   const [form, setFom] = useState({
     Nome: '',
@@ -64,6 +69,21 @@ const Pesquisa = () => {
               })
             }
           </div>
+
+          <label className='font-bold'>Aplique seu desconto em:</label>
+          <div className="inline-block relative w-50 flex">
+            <select name="Produto" className=" p-4 block shadow bg-green-200 my-2 rounded block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+              {
+                data &&
+                data.produtos.map((produto) => {
+                  return (
+                    <option value={produto} > {produto} </option>
+                  )
+                })
+              }
+            </select>
+          </div>
+
           <button className='bg-green-500 px-12 py-3 my-2 font-bold rounded-lg shadow-lg hover:shadow' onClick={save}>Salvar</button>
         </div>
       }
