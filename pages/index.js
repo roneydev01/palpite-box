@@ -23,9 +23,11 @@ const Index = () => {
       </div>
       {!data && <p> Carregando...</p>}
       {data && data.showCoupon &&
-        <p className='my-12 text-center'>
-          {data.message}
-        </p>
+        <div className="bg-teal-100 border-t-2 border-teal-400 rounded-b text-teal-900 px-2 py-2 shadow-md" role="alert">
+          <p className='my-4 text-center'>
+            {data.message}
+          </p>
+        </div>
       }
     </div >
   )
