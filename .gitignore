@@ -1,8 +1,8 @@
 # Meus Arquivos
 .next
 node_modules
-env.local
-credentials.json
+.env.local
+credentials*
 
 # Logs
 logs
