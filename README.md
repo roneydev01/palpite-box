@@ -4,8 +4,13 @@
 
 Este projeto foi construído no Fullstack Master Premium do [DevPleno](https://devpleno.com). Uma versão online deste projeto pode ser encontrada em: https://palpite-box.roneydev01.vercel.app
 
-## Início
+## Preview
 
+[![Page Preview](https://palpite-box.roneydev01.vercel.app/preview.png)](https://palpite-box.roneydev01.vercel.app/)
+
+**[View Live Preview](https://palpite-box.roneydev01.vercel.app/)**
+
+## Início
 
 
 ### Pré-requisitos:
